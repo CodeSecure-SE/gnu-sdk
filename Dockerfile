@@ -13,10 +13,10 @@ RUN export LC_ALL=en_US.UTF-8
 RUN export LANG=en_US.UTF-8
 RUN locale-gen en_US.UTF-8
 
-RUN groupadd --gid 1002 user\
-    && useradd --uid 1002 --gid 1002 -m user
+#RUN groupadd --gid 1001 user\
+#    && useradd --uid 1002 --gid 1002 -m user
 
-RUN mkdir /__w && chown user:user /__w    
-RUN chown user:user /opt
+#RUN mkdir /__w && chown user:user /__w    
+#RUN chown user:user /opt
 
-USER user
+#USER user
