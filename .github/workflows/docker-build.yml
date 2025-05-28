@@ -29,4 +29,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest # Replace with your image name and tag
+          tags: ghcr.io/${{ github.repository | toLower }}:latest # Replace with your image name and tag
